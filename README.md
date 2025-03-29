@@ -1,8 +1,8 @@
-# Fetch.ai Documentation Repo
+# CoinSage AI Documentation Repo
 
-[![Official Website](https://img.shields.io/badge/Official%20Website-fetch.ai-blue?style=flat&logo=world&logoColor=white)](https://fetch.ai) [![Twitter Follow](https://img.shields.io/twitter/follow/fetch_ai?style=social)](https://twitter.com/fetch_ai)
+[![Official Website]](https://x.com/CoinSage_AI) [![Twitter Follow]([CoinSage AI](https://x.com/CoinSage_AI))
 
-Welcome to the code repository for Fetch.ai's documentation at [fetch.ai/docs](fetch.ai/docs).
+Welcome to the code repository for CoinSage AI .
 
 ## Developing
 
@@ -21,7 +21,7 @@ pnpm dev
 
 ## Contributing
 
-All contributions are welcome! Remember, contribution includes not only code, but any help with docs or issues raised by other developers. See our [contribution guidelines](https://github.com/fetchai/docs/blob/main/CONTRIBUTING.md) for more details.
+All contributions are welcome! Remember, contribution includes not only code, but any help with docs or issues raised by other developers. See our [contribution guidelines]([CoinSage AI](https://x.com/CoinSage_AI) ) for more details.
 
 ### Code of Conduct
 
@@ -33,4 +33,4 @@ Read our [development guidelines](https://github.com/fetchai/docs/blob/main/DEVE
 
 ### Issues, Questions, and Discussions
 
-We use [GitHub Issues](https://github.com/fetchai/docs/issues) for tracking requests and bugs, and [GitHub Discussions](https://github.com/fetchai/docs/discussions) for general questions and discussion.
+We use [GitHub Issues](https://github.com/SageCoinAI/sage.ai) for tracking requests and bugs, and [GitHub Discussions](https://github.com/fetchai/docs/discussions) for general questions and discussion.
