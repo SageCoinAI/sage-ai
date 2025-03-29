@@ -1,0 +1,35 @@
+name: Spell Checking
+
+on:
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  spellcheck:
+    name: Check Spelling with custom Python script
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y aspell aspell-en
+          python -m pip install --upgrade pip
+          pip install spacy markdown-it-py pyspellchecker
+          python -m spacy download en_core_web_sm
+
+      - name: Run spell-check script
+        run: |
+          set -e
+          python .github/spelling/check_spelling.py

@@ -1,0 +1,402 @@
+.page {
+  max-width: 976px;
+  margin: 24px auto;
+}
+
+.mainTitle {
+  color: #000d3d;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.subTitle {
+  color: #000d3d;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+}
+
+@media (max-width: 767px) {
+  .footerPage {
+    padding: 24px;
+  }
+
+  .mainTitle {
+    color: #000d3d;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .subTitle {
+    color: #000d3d;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.description {
+  color: #73879e;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.subDescription {
+  color: #73879e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+
+.guideBox {
+  padding: 24px 48px 24px 24px;
+  border-radius: 16px;
+  height: 284px;
+  flex: 1 0 0;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hoverGuideBox {
+  padding: 24px 48px 24px 24px;
+  border-radius: 16px;
+  height: 284px;
+  flex: 1 0 0;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 16px;
+  background: #f3f5f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 13, 61, 0.16);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hoverGuideBox:hover {
+  transform: scale(1.02);
+}
+
+.startGuides {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.startGuideText {
+  color: #000d3d;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.18px;
+  max-width: 254px;
+}
+
+.viewMore {
+  color: #5f38fb;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+
+.docsLogo {
+  width: 214.072px;
+  height: 24px;
+}
+
+.startGuideIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.headingSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.welcomeText {
+  color: #73879e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.horizontalLine {
+  background: var(--Grey-Grey-200, #dce2ea);
+  max-width: 1216px;
+  height: 1px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+:is(html[class~="dark"] .horizontalLine) {
+  background: #4d4f57;
+}
+
+.systemDescripton {
+  color: #3e4c5c;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.courseSection {
+  display: flex;
+  padding: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #5f38fb;
+}
+
+.cardStack {
+  display: flex;
+  padding: 40px 40px 24px 34px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  box-shadow: 0px -4px 24px 0px rgba(0, 0, 0, 0.05);
+  height: 587px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .cardStack {
+    flex-direction: column;
+  }
+}
+.stackHeading {
+  color: #000d3d;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.32px;
+  text-align: center;
+  max-width: 207px;
+  height: 90px;
+}
+
+.stackSubHeading {
+  color: #73879e;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: center;
+}
+
+@media (max-width: 1221px) {
+  .stackSubHeading {
+    max-width: 100%;
+  }
+}
+
+.coursesHeading {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+}
+
+:is(html[class~="dark"] .coursesSubtitle) {
+  color: #a6a7ab;
+}
+
+.coursesSubtitle {
+  color: #dce2ea;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.next {
+  max-width: 46px;
+  display: flex;
+  height: 44px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #5f38fb;
+  color: #ffff;
+}
+
+.introduction {
+  color: #8a9fb8;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.keywordbg {
+  display: flex;
+  padding: 3px 12px 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #efebff;
+}
+
+.keywordtext {
+  color: #5f38fb;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.vector {
+  position: absolute;
+  top: -35px;
+  left: 20px;
+}
+
+.vectorCustom {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.comingSomewhereWrapper:hover {
+  background: #c5cae9;
+}
+
+.comingSomewhereWrapper {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #d0d9e3;
+  background: #fff;
+  backdrop-filter: blur(35px);
+  cursor: pointer;
+}
+
+.comingSomewhereImg {
+  width: 47.35px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.comingSomewhereTitle {
+  color: #000d3d;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+:is(html[class~="dark"] .comingSomewhereTitle:hover) {
+  color: #cfc3fe;
+}
+
+:is(html[class~="dark"] .mainTitle) {
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .description) {
+  color: #a6a7ab;
+}
+
+:is(html[class~="dark"] .systemDescripton) {
+  color: #a6a7ab;
+}
+
+:is(html[class~="dark"] .welcomeText) {
+  color: #a6a7ab;
+}
+
+:is(html[class~="dark"] .description) {
+  color: #a6a7ab;
+}
+
+:is(html[class~="dark"] .subDescription) {
+  color: #a6a7ab;
+}
+
+:is(html[class~="dark"] .subTitle) {
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .guideBox) {
+  background-position-y: 99px;
+  background-repeat: no-repeat;
+  background-color: #2c2e38;
+}
+
+:is(html[class~="dark"] .hoverGuideBox) {
+  background-position-y: 99px;
+  background-repeat: no-repeat;
+  background-color: #2c2e38;
+}
+
+:is(html[class~="dark"] .startGuideText) {
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .comingSomewhereWrapper) {
+  background-color: #2c2e38;
+  border: 1px solid #2c2e38;
+}
+
+:is(html[class~="dark"] .comingSomewhereWrapper:hover) {
+  background: rgba(95, 56, 251, 0.2);
+  backdrop-filter: blur(35px);
+}
+
+:is(html[class~="dark"] .comingSomewhereTitle) {
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .courseSection) {
+  background-color: #2c2e38;
+}
+
+:is(html[class~="dark"] .stackHeading) {
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .keywordbg) {
+  border: 1px solid #4d4f57;
+  background: none;
+}
+
+:is(html[class~="dark"] .keywordtext) {
+  color: #bfaffd;
+}
+
+:is(html[class~="dark"] .introduction) {
+  color: #a6a7ab;
+}

@@ -1,0 +1,225 @@
+.guideBox {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: rgba(176, 190, 206, 0.2);
+}
+
+:is(html[class~="dark"] .guideBox) {
+  background-color: #2c2e38;
+}
+
+.featureBox {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--32, 32px);
+  align-self: stretch;
+  border-radius: 12px;
+  background: #f3f5f8;
+  margin-block: 48px;
+}
+
+:is(html[class~="dark"] .featureBox) {
+  background-color: #242630;
+}
+
+.hoverGuideBox {
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(
+    134deg,
+    rgba(133, 102, 255, 0.2) 16.16%,
+    rgba(95, 56, 251, 0.3) 55.86%,
+    rgba(95, 56, 251, 0.4) 78.77%
+  );
+  box-shadow: 10px 10px 30px 0px rgba(95, 56, 251, 0.3);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+:is(html[class~="dark"] .hoverGuideBox) {
+  background: rgba(95, 56, 251, 0.2);
+  backdrop-filter: blur(35px);
+  box-shadow: none;
+}
+
+.tabsTopContainer {
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  gap: 10px;
+}
+
+.productIcon {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.productOuterBox {
+  display: flex;
+  padding: 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #eafcf1;
+}
+
+.productsHeading {
+  color: rgba(0, 13, 61, 0.8);
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+
+.productDescripton {
+  color: #73879e;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 14px;
+}
+
+.productWrap {
+  display: flex;
+  max-width: 54px;
+  max-height: 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f3f5f8;
+  padding: 11px;
+}
+
+.productHover {
+  background: #efebff;
+  display: flex;
+  max-width: 54px;
+  max-height: 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 11px;
+}
+
+:is(html[class~="dark"] .productsHeading) {
+  color: #a6a7ab;
+}
+
+:is(html[class~="dark"] .productDescripton) {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.featureGuideHeading {
+  color: #000d3d;
+  font-family: Lexend;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+}
+
+:is(html[class~="dark"] .featureGuideHeading) {
+  color: #e9e9ea;
+}
+
+.featuredGuidesTab {
+  display: flex;
+  padding: 16px 16px 16px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #dce2ea;
+  background: #fff;
+  backdrop-filter: blur(35px);
+  color: #000d3d;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+}
+
+.featuredGuidesTab:hover {
+  background-color: #efebff;
+  color: #5f38fb;
+  border: 1px solid transparent;
+}
+
+:is(html[class~="dark"] .featuredGuidesTab) {
+  background-color: #2c2e38;
+  border: none;
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .featuredGuidesTab:hover) {
+  color: #cfc3fe;
+}
+
+:is(html[class~="dark"] .featuredGuidesTab:hover) {
+  border-radius: 8px;
+  background: rgba(95, 56, 251, 0.2);
+  backdrop-filter: blur(35px);
+}
+
+.featuredGuidesTablabel {
+  display: flex;
+  height: 24px;
+  padding: 2px 8px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: #e8ecf1;
+  color: #556578;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+}
+
+.tabHeading {
+  color: #8a9fb8;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+:is(html[class~="dark"] .tabHeading) {
+  color: #a6a7ab;
+}
+
+.tabSubHeading {
+  color: #000d3d;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.32px;
+}
+
+:is(html[class~="dark"] .tabSubHeading) {
+  color: #e9e9ea;
+}
+
+:is(html[class~="dark"] .tabSubHeading:hover) {
+  color: #cfc3fe;
+}
